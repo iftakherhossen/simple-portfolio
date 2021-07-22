@@ -1,0 +1,176 @@
+/* Common CSS or Utilities Style Start */
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", "Comic Sans", 'cursive';
+    background-image: linear-gradient(to left, #4169E1, #A7C7E7);
+    background-attachment: fixed;
+    color: white;
+    overflow: hidden;
+}
+.wrapper {
+    margin: 5%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Common CSS or Utilities Style End */
+
+
+/* Header Style Start */
+.heading-title h1 {
+    font-size: 4em;
+    margin-bottom: 15px;
+}
+.sm-container {
+    display: flex;
+}
+.m-black {
+    color: black;
+}
+.m-sm {
+    color: black;
+    font-size: 1.7em;
+}
+.txt-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #4169E1;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    z-index: 1;
+}
+.txt-details {
+    height: 50px;
+    background-color: #A7C7E7;
+    padding: 10px 25px;
+    margin-left: -15px; 
+    margin-top: 6px;
+    border-radius: 0 100px 100px 0;
+}
+.txt-details h3 {
+    font-size: 1.5em;
+}
+.txt-details a {
+    text-decoration: none;
+    color: black;
+}
+.txt-details a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}
+
+/* Header Style End */
+
+/* Animation Style Start */
+.animation-area {
+    width: 100%;
+    height: 100%;
+}
+.circle-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    z-index: -1;
+}
+.circle-area  li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 5px solid #ffffff38;
+    animation: animate 20s linear infinite;
+    bottom: -200px;
+}
+.circle-area li:nth-child(1) {
+    left: 86%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 0s;
+}
+.circle-area li:nth-child(2) {
+    left: 15%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.circle-area li:nth-child(3) {
+    left: 74%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+.circle-area li:nth-child(4) {
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+.circle-area li:nth-child(5) {
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+.circle-area li:nth-child(6) {
+    left: 20%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+}
+.circle-area li:nth-child(7) {
+    left: 8%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 4.5s;
+}
+.circle-area li:nth-child(8) {
+    left: 35%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 4s;
+    animation-duration: 15s;
+}
+.circle-area li:nth-child(9) {
+    left: 56%;
+    width: 65px;
+    height: 65px;
+    animation-delay: 3.2s;
+    animation-duration: 15s;
+}
+.circle-area li:nth-child(10) {
+    left: -9%;
+    width: 200px;
+    height: 200px;
+    animation-delay: 6s;
+}
+.circle-area li:nth-child(11) {
+    left: 95%;
+    width: 130px;
+    height: 130px;
+    animation-delay: 7s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+} 
+/* Animation Style End */
