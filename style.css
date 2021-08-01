@@ -23,6 +23,9 @@ body {
     font-size: 4em;
     margin-bottom: 15px;
 }
+.custom-text-shadow {
+    text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 1em white;
+}
 .sm-container {
     display: flex;
 }
@@ -33,35 +36,24 @@ body {
     color: black;
     font-size: 1.7em;
 }
-.txt-icon {
-    width: 60px;
-    height: 60px;
-    background-color: #4169E1;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    z-index: 1;
-}
 .txt-details {
     height: 50px;
     background-color: #A7C7E7;
     padding: 10px 25px;
     margin-left: -15px; 
     margin-top: 6px;
-    border-radius: 0 100px 100px 0;
+    border-radius: 100px;
 }
-.txt-details h3 {
-    font-size: 1.5em;
+.txt-details:hover {
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
 }
 .txt-details a {
     text-decoration: none;
     color: black;
 }
-.txt-details a:hover {
-    color: #0a58ca;
-    text-decoration: underline;
+.txt-details:hover a {
+    color: white;
 }
 /* Header Style End */
 
